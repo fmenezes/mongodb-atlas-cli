@@ -1,7 +1,7 @@
 project_name: atlascli
 
-# monorepo:
-#   tag_prefix: atlascli/
+monorepo:
+  tag_prefix: atlascli/
 
 before:
   hooks:
