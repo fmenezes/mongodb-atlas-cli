@@ -23,7 +23,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/search"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/search"
 )
 
 // StableIDs is a struct that holds a list of OpenAPI operation IDs.

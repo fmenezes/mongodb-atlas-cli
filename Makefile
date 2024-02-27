@@ -17,9 +17,9 @@ ATLAS_VERSION?=$(shell git describe --match "atlascli/v*" | cut -d "v" -f 2)
 ATLAS_DESTINATION=./bin/$(ATLAS_BINARY_NAME)
 ATLAS_INSTALL_PATH="${GOPATH}/bin/$(ATLAS_BINARY_NAME)"
 
-LINKER_FLAGS=-s -w -X github.com/mongodb/mongodb-atlas-cli/internal/version.GitCommit=${MCLI_GIT_SHA}
-MCLI_LINKER_FLAGS=${LINKER_FLAGS} -X github.com/mongodb/mongodb-atlas-cli/internal/config.ToolName=$(MCLI_BINARY_NAME) -X github.com/mongodb/mongodb-atlas-cli/internal/version.Version=${MCLI_VERSION}
-ATLAS_LINKER_FLAGS=${LINKER_FLAGS} -X github.com/mongodb/mongodb-atlas-cli/internal/config.ToolName=atlascli -X github.com/mongodb/mongodb-atlas-cli/internal/version.Version=${ATLAS_VERSION}
+LINKER_FLAGS=-s -w -X github.com/fmenezes/mongodb-atlas-cli/internal/version.GitCommit=${MCLI_GIT_SHA}
+MCLI_LINKER_FLAGS=${LINKER_FLAGS} -X github.com/fmenezes/mongodb-atlas-cli/internal/config.ToolName=$(MCLI_BINARY_NAME) -X github.com/fmenezes/mongodb-atlas-cli/internal/version.Version=${MCLI_VERSION}
+ATLAS_LINKER_FLAGS=${LINKER_FLAGS} -X github.com/fmenezes/mongodb-atlas-cli/internal/config.ToolName=atlascli -X github.com/fmenezes/mongodb-atlas-cli/internal/version.Version=${ATLAS_VERSION}
 ATLAS_E2E_BINARY?=../../../bin/${ATLAS_BINARY_NAME}
 
 DEBUG_FLAGS=all=-N -l

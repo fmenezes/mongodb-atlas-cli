@@ -15,11 +15,11 @@
 package performanceadvisor
 
 import (
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/namespaces"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/slowoperationthreshold"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/slowquerylogs"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/suggestedindexes"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/namespaces"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/slowoperationthreshold"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/slowquerylogs"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/mongocli/performanceadvisor/suggestedindexes"
 	"github.com/spf13/cobra"
 )
 

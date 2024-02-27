@@ -19,9 +19,9 @@ package convert
 import (
 	"testing"
 
+	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/test/fixture"
 	"github.com/go-test/deep"
-	"github.com/mongodb/mongodb-atlas-cli/internal/pointer"
-	"github.com/mongodb/mongodb-atlas-cli/internal/test/fixture"
 	"go.mongodb.org/ops-manager/opsmngr"
 )
 

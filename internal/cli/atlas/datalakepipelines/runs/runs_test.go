@@ -21,7 +21,7 @@ package runs
 import (
 	"testing"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
 )
 
 func TestBuilder(t *testing.T) {

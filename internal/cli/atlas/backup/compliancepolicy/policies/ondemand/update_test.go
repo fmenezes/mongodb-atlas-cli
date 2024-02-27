@@ -17,8 +17,8 @@ package ondemand
 import (
 	"testing"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/flag"
-	"github.com/mongodb/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
 )
 
 func TestUpdateBuilder(t *testing.T) {

@@ -14,9 +14,9 @@
 package fixture
 
 import (
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
 	"github.com/golang/mock/gomock"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
-	"github.com/mongodb/mongodb-atlas-cli/internal/mocks"
 )
 
 type MockDeploymentOpts struct {

@@ -25,14 +25,14 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer/json"
 	"k8s.io/client-go/kubernetes/scheme"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/kubernetes/operator/datafederation"
-	"github.com/mongodb/mongodb-atlas-cli/internal/kubernetes/operator/dbusers"
-	"github.com/mongodb/mongodb-atlas-cli/internal/kubernetes/operator/deployment"
-	"github.com/mongodb/mongodb-atlas-cli/internal/kubernetes/operator/features"
-	"github.com/mongodb/mongodb-atlas-cli/internal/kubernetes/operator/project"
-	"github.com/mongodb/mongodb-atlas-cli/internal/kubernetes/operator/resources"
-	"github.com/mongodb/mongodb-atlas-cli/internal/store"
-	"github.com/mongodb/mongodb-atlas-cli/internal/store/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/datafederation"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/dbusers"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/deployment"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/features"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/project"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/resources"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/store/atlas"
 )
 
 const (

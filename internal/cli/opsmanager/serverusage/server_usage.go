@@ -15,9 +15,9 @@
 package serverusage
 
 import (
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/opsmanager/serverusage/organizations"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/opsmanager/serverusage/projects"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/opsmanager/serverusage/organizations"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/opsmanager/serverusage/projects"
 	"github.com/spf13/cobra"
 )
 

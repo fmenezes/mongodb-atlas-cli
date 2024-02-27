@@ -19,9 +19,9 @@ package serverusage
 import (
 	"testing"
 
+	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
 	"github.com/golang/mock/gomock"
-	"github.com/mongodb/mongodb-atlas-cli/internal/mocks"
-	"github.com/mongodb/mongodb-atlas-cli/internal/test"
 )
 
 func TestCapture_Run(t *testing.T) {

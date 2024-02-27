@@ -19,10 +19,10 @@ package operator
 import (
 	"testing"
 
+	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
 	"github.com/go-test/deep"
 	"github.com/golang/mock/gomock"
-	mocks "github.com/mongodb/mongodb-atlas-cli/internal/mocks/atlas"
-	"github.com/mongodb/mongodb-atlas-cli/internal/pointer"
 	"go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 
