@@ -1,7 +1,7 @@
 project_name: atlascli
 
-monorepo:
-  tag_prefix: atlascli/
+# monorepo:
+#   tag_prefix: atlascli/
 
 before:
   hooks:
@@ -124,18 +124,18 @@ changelog:
     - '^test:'
     - '^task:'
     - '^build(deps):'
-signs:
-  - id: linux_artifacts
-    signature: "${artifact}.sig"
-    cmd: "./build/package/linux_notarize.sh"
-    ids:
-      - linux_archives
-      - linux_package
-      - mongodb-atlas
-    env:
-      - TOOL_NAME=atlascli
-    artifacts: all
-    output: true
+# signs:
+#   - id: linux_artifacts
+#     signature: "${artifact}.sig"
+#     cmd: "./build/package/linux_notarize.sh"
+#     ids:
+#       - linux_archives
+#       - linux_package
+#       - mongodb-atlas
+#     env:
+#       - TOOL_NAME=atlascli
+#     artifacts: all
+#     output: true
 release:
   prerelease: auto
   name_template: "MongoDB Atlas CLI {{.Version}}"
