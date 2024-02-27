@@ -1,4 +1,4 @@
-module github.com/mongodb/mongodb-atlas-cli
+module github.com/fmenezes/mongodb-atlas-cli
 
 go 1.21
 

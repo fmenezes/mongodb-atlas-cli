@@ -18,12 +18,12 @@ import (
 	"fmt"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/config"
-	"github.com/mongodb/mongodb-atlas-cli/internal/search"
-	"github.com/mongodb/mongodb-atlas-cli/internal/store"
-	"github.com/mongodb/mongodb-atlas-cli/internal/telemetry"
-	"github.com/mongodb/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/search"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/telemetry"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
 )
 
 type ConnectToAtlasOpts struct {

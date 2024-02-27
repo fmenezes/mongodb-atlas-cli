@@ -15,18 +15,18 @@
 package iam
 
 import (
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/iam/globalaccesslists"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/iam/globalapikeys"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/iam/organizations"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/iam/projects"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/iam/teams"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/iam/users"
-	"github.com/mongodb/mongodb-atlas-cli/internal/config"
-	"github.com/mongodb/mongodb-atlas-cli/internal/flag"
-	"github.com/mongodb/mongodb-atlas-cli/internal/log"
-	"github.com/mongodb/mongodb-atlas-cli/internal/usage"
-	"github.com/mongodb/mongodb-atlas-cli/internal/validate"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/iam/globalaccesslists"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/iam/globalapikeys"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/iam/organizations"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/iam/projects"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/iam/teams"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/iam/users"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/log"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/validate"
 	"github.com/spf13/cobra"
 )
 

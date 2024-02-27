@@ -19,12 +19,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/config"
-	"github.com/mongodb/mongodb-atlas-cli/internal/flag"
-	storeHelper "github.com/mongodb/mongodb-atlas-cli/internal/store"
-	store "github.com/mongodb/mongodb-atlas-cli/internal/store/atlas"
-	"github.com/mongodb/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
+	storeHelper "github.com/fmenezes/mongodb-atlas-cli/internal/store"
+	store "github.com/fmenezes/mongodb-atlas-cli/internal/store/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
 	"github.com/spf13/cobra"
 	"go.mongodb.org/atlas-sdk/v20231115007/admin"
 )

@@ -17,7 +17,7 @@ package settings
 import (
 	"fmt"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
 )
 
 func validateConfigOpts(opts *ConfigOpts) error {

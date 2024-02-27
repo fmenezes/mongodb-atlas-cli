@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mongodb/mongodb-atlas-cli/test/e2e"
+	"github.com/fmenezes/mongodb-atlas-cli/test/e2e"
 	"github.com/stretchr/testify/require"
 )
 

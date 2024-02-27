@@ -18,10 +18,10 @@ import (
 	"context"
 	"runtime"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/require"
-	"github.com/mongodb/mongodb-atlas-cli/internal/podman"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/require"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/podman"
 	"github.com/spf13/cobra"
 )
 

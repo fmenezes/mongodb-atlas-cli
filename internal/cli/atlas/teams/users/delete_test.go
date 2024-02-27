@@ -19,9 +19,9 @@ package users
 import (
 	"testing"
 
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
 	"github.com/golang/mock/gomock"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	mocks "github.com/mongodb/mongodb-atlas-cli/internal/mocks/atlas"
 )
 
 func TestDelete_Run(t *testing.T) {

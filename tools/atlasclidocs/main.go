@@ -18,9 +18,9 @@ import (
 	"log"
 	"os"
 
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/root/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
 	"github.com/mongodb-labs/cobra2snooty"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli/root/atlas"
-	"github.com/mongodb/mongodb-atlas-cli/internal/config"
 	"github.com/spf13/cobra"
 )
 

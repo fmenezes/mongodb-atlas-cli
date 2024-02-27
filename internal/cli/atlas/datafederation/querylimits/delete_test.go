@@ -21,11 +21,11 @@ package querylimits
 import (
 	"testing"
 
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
+	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
 	"github.com/golang/mock/gomock"
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
-	"github.com/mongodb/mongodb-atlas-cli/internal/flag"
-	mocks "github.com/mongodb/mongodb-atlas-cli/internal/mocks/atlas"
-	"github.com/mongodb/mongodb-atlas-cli/internal/test"
 )
 
 func TestDelete_Run(t *testing.T) {

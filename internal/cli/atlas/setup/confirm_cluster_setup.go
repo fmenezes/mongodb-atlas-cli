@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mongodb/mongodb-atlas-cli/internal/telemetry"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/telemetry"
 )
 
 const loadSampleDataMsg = `

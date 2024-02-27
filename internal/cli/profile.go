@@ -15,8 +15,8 @@
 package cli
 
 import (
-	"github.com/mongodb/mongodb-atlas-cli/internal/config"
-	"github.com/mongodb/mongodb-atlas-cli/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
 )
 
 func InitProfile(profile string) error {

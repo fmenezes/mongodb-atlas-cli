@@ -33,7 +33,7 @@ COMMIT=$(git log -n1 --format=format:"%H")
 SOURCE_FILES=./cmd/mongocli
 PACKAGE_NAME=mongocli_${VERSION_NAME}_windows_x86_64.msi
 OUTPUT=./bin/mongocli.exe
-LINKER_FLAGS="-s -w -X github.com/mongodb/mongodb-atlas-cli/internal/version.Version=${VERSION_GIT} -X github.com/mongodb/mongodb-atlas-cli/internal/version.GitCommit=${COMMIT} -X github.com/mongodb/mongodb-atlas-cli/internal/config.ToolName=${TOOL_NAME:?}"
+LINKER_FLAGS="-s -w -X github.com/fmenezes/mongodb-atlas-cli/internal/version.Version=${VERSION_GIT} -X github.com/fmenezes/mongodb-atlas-cli/internal/version.GitCommit=${COMMIT} -X github.com/fmenezes/mongodb-atlas-cli/internal/config.ToolName=${TOOL_NAME:?}"
 WIX_MANIFEST_FILE="./build/package/wix/${TOOL_NAME:?}.json"
 
 if [[ "${TOOL_NAME:?}" == atlascli ]]; then

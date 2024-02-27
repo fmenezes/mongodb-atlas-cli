@@ -15,7 +15,7 @@
 package slowoperationthreshold
 
 import (
-	"github.com/mongodb/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
 	"github.com/spf13/cobra"
 )
 
