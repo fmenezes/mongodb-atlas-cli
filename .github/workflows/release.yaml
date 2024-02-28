@@ -2,8 +2,8 @@
 name: Release AtlasCLI
 on:
   push:
-    tags:
-      - atlascli_*
+    tags: ['*']
+      # - atlascli_*
   pull_request:
 permissions:
   contents: write
