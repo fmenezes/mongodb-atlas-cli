@@ -137,7 +137,7 @@ changelog:
 #     artifacts: all
 #     output: true
 release:
-  prerelease: auto
+  prerelease: false
   name_template: "MongoDB Atlas CLI {{.Version}}"
   extra_files:
     - glob: ./bin/*.msi
