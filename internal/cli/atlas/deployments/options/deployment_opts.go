@@ -26,16 +26,16 @@ import (
 
 	"github.com/AlecAivazis/survey/v2"
 	"github.com/briandowns/spinner"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/setup"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/log"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/podman"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/search"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/telemetry"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/terminal"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/setup"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/log"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/podman"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/search"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/telemetry"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/terminal"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
 )
 
 const (

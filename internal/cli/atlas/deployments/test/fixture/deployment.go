@@ -14,8 +14,8 @@
 package fixture
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/deployments/options"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks"
 	"github.com/golang/mock/gomock"
 )
 

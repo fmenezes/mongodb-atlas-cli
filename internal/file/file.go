@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/search"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/search"
 	"github.com/spf13/afero"
 	"gopkg.in/yaml.v3"
 )

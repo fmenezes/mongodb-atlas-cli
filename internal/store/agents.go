@@ -17,11 +17,11 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	"go.mongodb.org/ops-manager/opsmngr"
 )
 
-//go:generate mockgen -destination=../mocks/mock_agents.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store AgentLister,AgentUpgrader,AgentAPIKeyLister,AgentAPIKeyCreator,AgentAPIKeyDeleter,AgentGlobalVersionsLister,AgentProjectVersionsLister
+//go:generate mockgen -destination=../mocks/mock_agents.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store AgentLister,AgentUpgrader,AgentAPIKeyLister,AgentAPIKeyCreator,AgentAPIKeyDeleter,AgentGlobalVersionsLister,AgentProjectVersionsLister
 
 type AgentLister interface {
 	Agents(string, string, *opsmngr.ListOptions) (*opsmngr.Agents, error)

@@ -19,7 +19,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	"go.mongodb.org/atlas/auth"
 )
 

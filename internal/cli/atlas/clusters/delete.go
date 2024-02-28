@@ -19,13 +19,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/require"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/watchers"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/require"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/watchers"
 	"github.com/spf13/cobra"
 )
 

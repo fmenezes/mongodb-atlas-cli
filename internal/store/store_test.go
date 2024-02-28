@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlasauth "go.mongodb.org/atlas/auth"
 )
 

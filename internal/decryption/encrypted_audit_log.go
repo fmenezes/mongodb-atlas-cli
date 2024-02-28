@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/decryption/keyproviders"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/decryption/keyproviders"
 )
 
 var (

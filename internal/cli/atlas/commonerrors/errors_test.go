@@ -20,7 +20,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/pointer"
 	"go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 

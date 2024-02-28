@@ -23,11 +23,11 @@ import (
 	"strings"
 
 	"github.com/PaesslerAG/jsonpath"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/jsonpathwriter"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/jsonwriter"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/templatewriter"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/terminal"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/jsonpathwriter"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/jsonwriter"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/templatewriter"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/terminal"
 	"github.com/spf13/cobra"
 )
 

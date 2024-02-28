@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

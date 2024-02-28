@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/log"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/log"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/store"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
 )

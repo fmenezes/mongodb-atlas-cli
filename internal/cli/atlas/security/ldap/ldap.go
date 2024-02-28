@@ -15,7 +15,7 @@
 package ldap
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
 	"github.com/spf13/cobra"
 )
 

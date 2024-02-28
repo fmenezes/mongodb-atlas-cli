@@ -15,14 +15,14 @@
 package privateendpoints
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/aws"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/azure"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/datalake"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/gcp"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/interfaces"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/onlinearchive"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/privateendpoints/regionalmodes"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/aws"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/azure"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/datalake"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/gcp"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/interfaces"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/onlinearchive"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/privateendpoints/regionalmodes"
 	"github.com/spf13/cobra"
 )
 

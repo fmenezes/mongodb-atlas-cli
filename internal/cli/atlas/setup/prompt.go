@@ -18,8 +18,8 @@ import (
 	"fmt"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/validate"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/validate"
 )
 
 func newClusterNameQuestion(clusterName string) *survey.Question {

@@ -19,7 +19,7 @@ package cli
 import (
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

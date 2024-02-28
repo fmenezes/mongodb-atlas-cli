@@ -25,11 +25,11 @@ import (
 	"time"
 
 	"github.com/denisbrodbeck/machineid"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/log"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/terminal"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/version"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/log"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/terminal"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/version"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

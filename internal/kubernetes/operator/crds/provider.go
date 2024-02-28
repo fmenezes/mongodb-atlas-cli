@@ -30,7 +30,7 @@ const (
 	requestTimeout = 10 * time.Second
 )
 
-//go:generate mockgen -destination=../../../mocks/mock_atlas_operator_crd_provider.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/crds AtlasOperatorCRDProvider
+//go:generate mockgen -destination=../../../mocks/mock_atlas_operator_crd_provider.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/kubernetes/operator/crds AtlasOperatorCRDProvider
 type AtlasOperatorCRDProvider interface {
 	GetAtlasOperatorResource(resourceName, version string) (*apiextensions.CustomResourceDefinition, error)
 }

@@ -17,10 +17,10 @@ package logs
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/decryption"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/decryption"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
 )

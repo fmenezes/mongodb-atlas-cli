@@ -18,7 +18,7 @@ package users
 import (
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks"
 	"github.com/golang/mock/gomock"
 	"go.mongodb.org/atlas/mongodbatlas"
 )

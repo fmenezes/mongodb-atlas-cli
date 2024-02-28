@@ -15,9 +15,9 @@
 package streams
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/streams/connection"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/streams/instance"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/streams/connection"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/streams/instance"
 	"github.com/spf13/cobra"
 )
 

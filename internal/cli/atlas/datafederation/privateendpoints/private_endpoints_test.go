@@ -21,7 +21,7 @@ package privateendpoints
 import (
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 )
 
 func TestBuilder(t *testing.T) {

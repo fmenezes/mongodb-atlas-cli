@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/crds"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/kubernetes/operator/crds"
 )
 
 const (

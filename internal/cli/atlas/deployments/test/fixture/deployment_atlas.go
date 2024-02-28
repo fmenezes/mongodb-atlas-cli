@@ -14,10 +14,10 @@
 package fixture
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/deployments/options"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/pointer"
 	"github.com/golang/mock/gomock"
 	"go.mongodb.org/atlas-sdk/v20231115007/admin"
 )

@@ -25,19 +25,19 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/auth"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/require"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/log"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mongosh"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/prerun"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/sighandle"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/telemetry"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/validate"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/auth"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/require"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/log"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mongosh"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/prerun"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/sighandle"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/telemetry"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/validate"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"go.mongodb.org/atlas-sdk/v20231115007/admin"
@@ -96,7 +96,7 @@ We could not find your public IP address. To add your IP address run:
 
 `
 
-//go:generate mockgen -destination=../../../mocks/mock_setup.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/setup ProfileReader
+//go:generate mockgen -destination=../../../mocks/mock_setup.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/setup ProfileReader
 
 type ProfileReader interface {
 	ProjectID() string

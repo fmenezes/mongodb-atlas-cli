@@ -15,7 +15,7 @@
 package serverless
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/serverless/backup"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/serverless/backup"
 	"github.com/spf13/cobra"
 )
 

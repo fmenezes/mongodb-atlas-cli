@@ -17,15 +17,15 @@ package indexes
 import (
 	"context"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/search"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/require"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mongodbclient"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/store"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/deployments/options"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/search"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/require"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mongodbclient"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/store"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
 	"github.com/spf13/cobra"
 )
 

@@ -17,11 +17,11 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 
-//go:generate mockgen -destination=../mocks/mock_search_nodes.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store SearchNodesLister,SearchNodesCreator,SearchNodesUpdater,SearchNodesDeleter
+//go:generate mockgen -destination=../mocks/mock_search_nodes.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store SearchNodesLister,SearchNodesCreator,SearchNodesUpdater,SearchNodesDeleter
 
 type SearchNodesLister interface {
 	SearchNodes(string, string) (*atlasv2.ApiSearchDeploymentResponse, error)

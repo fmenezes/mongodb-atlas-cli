@@ -17,7 +17,7 @@ package pointer
 import (
 	"time"
 
-	customTime "github.com/fmenezes/mongodb-atlas-cli/internal/time"
+	customTime "github.com/fmenezes/mongodb-atlas-cli/v2/internal/time"
 	"golang.org/x/exp/constraints"
 )
 

@@ -21,7 +21,7 @@ import (
 	"os/exec"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/test/e2e"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/test/e2e"
 	"github.com/stretchr/testify/require"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )

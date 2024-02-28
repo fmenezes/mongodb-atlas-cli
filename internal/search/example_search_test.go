@@ -19,7 +19,7 @@ package search
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test/fixture"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test/fixture"
 )
 
 // This example demonstrates searching a cluster in an automation config.

@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/decryption/keyproviders"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/decryption/keyproviders"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/pointer"
 	"github.com/go-test/deep"
 )
 

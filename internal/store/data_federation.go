@@ -15,11 +15,11 @@
 package store
 
 import (
-	atlas "github.com/fmenezes/mongodb-atlas-cli/internal/store/atlas"
+	atlas "github.com/fmenezes/mongodb-atlas-cli/v2/internal/store/atlas"
 	"go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 
-//go:generate mockgen -destination=../mocks/mock_data_federation.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store DataFederationLister,DataFederationStore
+//go:generate mockgen -destination=../mocks/mock_data_federation.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store DataFederationLister,DataFederationStore
 
 type DataFederationStore interface {
 	DataFederationLister

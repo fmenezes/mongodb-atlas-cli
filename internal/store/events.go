@@ -17,12 +17,12 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 	"go.mongodb.org/ops-manager/opsmngr"
 )
 
-//go:generate mockgen -destination=../mocks/mock_events.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store OrganizationEventLister,ProjectEventLister,EventLister
+//go:generate mockgen -destination=../mocks/mock_events.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store OrganizationEventLister,ProjectEventLister,EventLister
 
 type OrganizationEventLister interface {
 	OrganizationEvents(string, *atlas.EventListOptions) (*atlas.EventResponse, error)

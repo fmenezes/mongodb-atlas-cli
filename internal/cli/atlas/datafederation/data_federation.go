@@ -17,9 +17,9 @@
 package datafederation
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/datafederation/privateendpoints"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/datafederation/querylimits"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/datafederation/privateendpoints"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/datafederation/querylimits"
 	"github.com/spf13/cobra"
 )
 

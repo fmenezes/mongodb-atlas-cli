@@ -17,11 +17,11 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 )
 
-//go:generate mockgen -destination=../mocks/mock_data_lake.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store DataLakeLister,DataLakeDescriber,DataLakeCreator,DataLakeDeleter,DataLakeUpdater,DataLakeStore
+//go:generate mockgen -destination=../mocks/mock_data_lake.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store DataLakeLister,DataLakeDescriber,DataLakeCreator,DataLakeDeleter,DataLakeUpdater,DataLakeStore
 
 type DataLakeLister interface {
 	DataLakes(string) ([]atlas.DataLake, error)

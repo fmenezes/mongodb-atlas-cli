@@ -17,7 +17,7 @@ package nodes
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/file"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/file"
 	"github.com/spf13/afero"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )

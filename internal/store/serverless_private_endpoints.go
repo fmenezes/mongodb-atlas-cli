@@ -17,11 +17,11 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 
-//go:generate mockgen -destination=../mocks/mock_serverless_private_endpoints.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store ServerlessPrivateEndpointsLister
+//go:generate mockgen -destination=../mocks/mock_serverless_private_endpoints.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store ServerlessPrivateEndpointsLister
 
 type ServerlessPrivateEndpointsLister interface {
 	ServerlessPrivateEndpoints(string, string) ([]atlasv2.ServerlessTenantEndpoint, error)

@@ -19,9 +19,9 @@ package apikeys
 import (
 	"testing"
 
-	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	mocks "github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/pointer"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 	"github.com/golang/mock/gomock"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )

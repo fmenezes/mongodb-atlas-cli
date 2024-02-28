@@ -17,12 +17,12 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 	"go.mongodb.org/ops-manager/opsmngr"
 )
 
-//go:generate mockgen -destination=../mocks/mock_deployments.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store HostLister,HostDescriber,HostDatabaseLister,HostDisksLister,HostByHostnameDescriber
+//go:generate mockgen -destination=../mocks/mock_deployments.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store HostLister,HostDescriber,HostDatabaseLister,HostDisksLister,HostByHostnameDescriber
 
 type HostLister interface {
 	Hosts(string, *opsmngr.HostListOptions) (*opsmngr.Hosts, error)

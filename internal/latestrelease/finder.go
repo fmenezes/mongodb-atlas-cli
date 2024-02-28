@@ -19,9 +19,9 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/file"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/version"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/file"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/version"
 	"github.com/spf13/afero"
 )
 

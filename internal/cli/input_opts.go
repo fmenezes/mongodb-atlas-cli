@@ -18,7 +18,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/terminal"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/terminal"
 )
 
 type InputOpts struct {

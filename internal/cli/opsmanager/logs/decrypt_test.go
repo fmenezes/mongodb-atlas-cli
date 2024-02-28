@@ -20,8 +20,8 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 	"github.com/spf13/afero"
 )
 

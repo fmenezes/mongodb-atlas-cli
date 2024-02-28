@@ -21,10 +21,10 @@ package datalakepipelines
 import (
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	mocks "github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 	"github.com/golang/mock/gomock"
 )
 

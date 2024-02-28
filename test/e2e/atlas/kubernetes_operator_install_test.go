@@ -24,8 +24,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/features"
-	"github.com/fmenezes/mongodb-atlas-cli/test/e2e"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/kubernetes/operator/features"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/test/e2e"
 	akov2 "github.com/mongodb/mongodb-atlas-kubernetes/v2/pkg/api/v1"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

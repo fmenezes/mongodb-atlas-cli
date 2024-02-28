@@ -21,20 +21,20 @@ import (
 	"time"
 
 	"github.com/AlecAivazis/survey/v2"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/require"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/log"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/prerun"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/telemetry"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/validate"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/require"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/log"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/prerun"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/telemetry"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/validate"
 	"github.com/pkg/browser"
 	"github.com/spf13/cobra"
 	"go.mongodb.org/atlas/auth"
 )
 
-//go:generate mockgen -destination=../../mocks/mock_login.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/cli/auth LoginConfig
+//go:generate mockgen -destination=../../mocks/mock_login.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/auth LoginConfig
 
 type LoginConfig interface {
 	config.SetSaver

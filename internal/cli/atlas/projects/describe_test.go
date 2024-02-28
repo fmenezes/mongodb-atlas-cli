@@ -19,7 +19,7 @@ package projects
 import (
 	"testing"
 
-	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
+	mocks "github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks/atlas"
 	"github.com/golang/mock/gomock"
 	"go.mongodb.org/ops-manager/opsmngr"
 )

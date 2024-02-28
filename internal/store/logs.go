@@ -18,12 +18,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 	"go.mongodb.org/ops-manager/opsmngr"
 )
 
-//go:generate mockgen -destination=../mocks/mock_logs.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store LogsDownloader,LogJobsDownloader,LogCollector,LogJobLister,LogJobDeleter
+//go:generate mockgen -destination=../mocks/mock_logs.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store LogsDownloader,LogJobsDownloader,LogCollector,LogJobLister,LogJobDeleter
 
 type LogsDownloader interface {
 	DownloadLog(*atlasv2.GetHostLogsApiParams) (io.ReadCloser, error)

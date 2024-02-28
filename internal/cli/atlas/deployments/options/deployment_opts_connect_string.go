@@ -20,7 +20,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/podman"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/podman"
 )
 
 const deploymentTypeLocal = "local"

@@ -15,8 +15,8 @@
 package kubernetes
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/kubernetes/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/kubernetes/operator"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/kubernetes/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/kubernetes/operator"
 	"github.com/spf13/cobra"
 )
 

@@ -15,14 +15,14 @@
 package clusters
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/clusters/advancedsettings"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/clusters/availableregions"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/clusters/connectionstring"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/clusters/indexes"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/clusters/onlinearchive"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/clusters/sampledata"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/search"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/clusters/advancedsettings"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/clusters/availableregions"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/clusters/connectionstring"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/clusters/indexes"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/clusters/onlinearchive"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/clusters/sampledata"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/search"
 	"github.com/spf13/cobra"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 	atlas "go.mongodb.org/atlas/mongodbatlas"

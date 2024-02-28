@@ -17,12 +17,12 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 	"go.mongodb.org/ops-manager/opsmngr"
 )
 
-//go:generate mockgen -destination=../mocks/mock_global_api_keys.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store GlobalAPIKeyLister,GlobalAPIKeyDescriber,GlobalAPIKeyUpdater,GlobalAPIKeyCreator,GlobalAPIKeyDeleter
+//go:generate mockgen -destination=../mocks/mock_global_api_keys.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store GlobalAPIKeyLister,GlobalAPIKeyDescriber,GlobalAPIKeyUpdater,GlobalAPIKeyCreator,GlobalAPIKeyDeleter
 
 type GlobalAPIKeyLister interface {
 	GlobalAPIKeys(*opsmngr.ListOptions) ([]opsmngr.APIKey, error)

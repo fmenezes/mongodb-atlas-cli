@@ -22,7 +22,7 @@ import (
 	"log"
 
 	"github.com/evergreen-ci/shrub"
-	"github.com/fmenezes/mongodb-atlas-cli/tools/genevergreen/generate"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/tools/genevergreen/generate"
 )
 
 const (

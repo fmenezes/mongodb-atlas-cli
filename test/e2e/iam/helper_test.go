@@ -23,7 +23,7 @@ import (
 	"os/exec"
 	"strconv"
 
-	"github.com/fmenezes/mongodb-atlas-cli/test/e2e"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/test/e2e"
 	"go.mongodb.org/atlas/mongodbatlas"
 )
 

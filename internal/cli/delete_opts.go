@@ -18,8 +18,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/prompt"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/telemetry"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/prompt"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/telemetry"
 )
 
 const (

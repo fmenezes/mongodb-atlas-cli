@@ -21,13 +21,13 @@ import (
 	"context"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/options"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/atlas/deployments/test/fixture"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/podman"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/deployments/options"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/atlas/deployments/test/fixture"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/podman"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 	"github.com/golang/mock/gomock"
 )
 

@@ -15,9 +15,9 @@
 package organizations
 
 import (
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/opsmanager/serverusage/organizations/hosts"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/opsmanager/serverusage/organizations/servertype"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/opsmanager/serverusage/organizations/hosts"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/opsmanager/serverusage/organizations/servertype"
 	"github.com/spf13/cobra"
 )
 

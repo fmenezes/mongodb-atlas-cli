@@ -18,7 +18,7 @@ package teams
 import (
 	"testing"
 
-	mocks "github.com/fmenezes/mongodb-atlas-cli/internal/mocks/atlas"
+	mocks "github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks/atlas"
 	"github.com/golang/mock/gomock"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )

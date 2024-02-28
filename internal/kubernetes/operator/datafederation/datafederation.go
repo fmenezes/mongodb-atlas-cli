@@ -17,9 +17,9 @@ package datafederation
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/features"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/kubernetes/operator/resources"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/store/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/kubernetes/operator/features"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/kubernetes/operator/resources"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/store/atlas"
 	akov2 "github.com/mongodb/mongodb-atlas-kubernetes/v2/pkg/api/v1"
 	akov2common "github.com/mongodb/mongodb-atlas-kubernetes/v2/pkg/api/v1/common"
 	akov2status "github.com/mongodb/mongodb-atlas-kubernetes/v2/pkg/api/v1/status"

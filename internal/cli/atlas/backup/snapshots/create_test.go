@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/mocks"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/pointer"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/mocks"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/pointer"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"

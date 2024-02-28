@@ -17,11 +17,11 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 
-//go:generate mockgen -destination=../mocks/mock_cloud_provider_regions.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store CloudProviderRegionsLister
+//go:generate mockgen -destination=../mocks/mock_cloud_provider_regions.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store CloudProviderRegionsLister
 
 type CloudProviderRegionsLister interface {
 	CloudProviderRegions(string, string, []string) (*atlasv2.PaginatedApiAtlasProviderRegions, error)

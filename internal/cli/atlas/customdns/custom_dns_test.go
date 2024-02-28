@@ -19,7 +19,7 @@ package customdns
 import (
 	"testing"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/test"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/test"
 )
 
 func TestCustomDNSBuilder(t *testing.T) {

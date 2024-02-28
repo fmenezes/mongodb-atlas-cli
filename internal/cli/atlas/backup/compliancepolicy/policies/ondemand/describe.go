@@ -17,11 +17,11 @@ package ondemand
 import (
 	"context"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	store "github.com/fmenezes/mongodb-atlas-cli/internal/store/atlas"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	store "github.com/fmenezes/mongodb-atlas-cli/v2/internal/store/atlas"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
 	"github.com/spf13/cobra"
 )
 

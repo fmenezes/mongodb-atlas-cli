@@ -19,12 +19,12 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/cli/require"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/flag"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/oauth"
-	"github.com/fmenezes/mongodb-atlas-cli/internal/usage"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/require"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/flag"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/oauth"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/usage"
 	"github.com/spf13/cobra"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 )
@@ -37,7 +37,7 @@ type logoutOpts struct {
 	keepConfig bool
 }
 
-//go:generate mockgen -destination=../../mocks/mock_logout.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/cli/auth Revoker,ConfigDeleter
+//go:generate mockgen -destination=../../mocks/mock_logout.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/cli/auth Revoker,ConfigDeleter
 
 type ConfigDeleter interface {
 	Delete() error

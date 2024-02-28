@@ -21,7 +21,7 @@ import (
 	"github.com/google/go-github/v50/github"
 )
 
-//go:generate mockgen -destination=../mocks/mock_release_version.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/version ReleaseVersionDescriber
+//go:generate mockgen -destination=../mocks/mock_release_version.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/version ReleaseVersionDescriber
 
 const (
 	maxWaitTime = 500 * time.Millisecond

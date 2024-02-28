@@ -17,11 +17,11 @@ package store
 import (
 	"fmt"
 
-	"github.com/fmenezes/mongodb-atlas-cli/internal/config"
+	"github.com/fmenezes/mongodb-atlas-cli/v2/internal/config"
 	atlasv2 "go.mongodb.org/atlas-sdk/v20231115007/admin"
 )
 
-//go:generate mockgen -destination=../mocks/mock_process_measurements.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/internal/store ProcessMeasurementLister
+//go:generate mockgen -destination=../mocks/mock_process_measurements.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/v2/internal/store ProcessMeasurementLister
 
 type ProcessMeasurementLister interface {
 	ProcessMeasurements(*atlasv2.GetHostMeasurementsApiParams) (*atlasv2.ApiMeasurementsGeneralViewAtlas, error)
