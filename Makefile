@@ -4,17 +4,19 @@ GOLANGCI_VERSION=v1.56.1
 COVERAGE=coverage.out
 
 MCLI_SOURCE_FILES?=./cmd/mongocli
+MCLI_SOURCE_DIR?=./mongocli
 MCLI_BINARY_NAME=mongocli
 MCLI_VERSION?=$(shell git describe --match "mongocli/v*" | cut -d "v" -f 2)
 MCLI_GIT_SHA?=$(shell git rev-parse HEAD)
-MCLI_DESTINATION=./bin/$(MCLI_BINARY_NAME)
+MCLI_DESTINATION=../bin/$(MCLI_BINARY_NAME)
 MCLI_INSTALL_PATH="${GOPATH}/bin/$(MCLI_BINARY_NAME)"
 MCLI_E2E_BINARY?=../../../bin/${MCLI_BINARY_NAME}
 
 ATLAS_SOURCE_FILES?=./cmd/atlas
+ATLAS_SOURCE_DIR?=./atlascli
 ATLAS_BINARY_NAME=atlas
 ATLAS_VERSION?=$(shell git describe --match "atlascli/v*" | cut -d "v" -f 2)
-ATLAS_DESTINATION=./bin/$(ATLAS_BINARY_NAME)
+ATLAS_DESTINATION=../bin/$(ATLAS_BINARY_NAME)
 ATLAS_INSTALL_PATH="${GOPATH}/bin/$(ATLAS_BINARY_NAME)"
 
 LINKER_FLAGS=-s -w -X github.com/fmenezes/mongodb-atlas-cli/internal/version.GitCommit=${MCLI_GIT_SHA}
@@ -136,12 +138,12 @@ build-all: build-mongocli build-atlascli ## Generate a binary for both CLIs
 .PHONY: build-mongocli
 build-mongocli: ## Generate a mongocli binary in ./bin
 	@echo "==> Building $(MCLI_BINARY_NAME) binary"
-	go build -ldflags "$(MCLI_LINKER_FLAGS)" -o $(MCLI_DESTINATION) $(MCLI_SOURCE_FILES)
+	go build -C "$(MCLI_SOURCE_DIR)" -ldflags "$(MCLI_LINKER_FLAGS)" -o $(MCLI_DESTINATION) $(MCLI_SOURCE_FILES)
 
 .PHONY: build-atlascli
 build-atlascli: ## Generate a atlascli binary in ./bin
 	@echo "==> Building $(ATLAS_BINARY_NAME) binary"
-	go build -ldflags "$(ATLAS_LINKER_FLAGS)" -o $(ATLAS_DESTINATION) $(ATLAS_SOURCE_FILES)
+	go build -C "$(ATLAS_SOURCE_DIR)" -ldflags "$(ATLAS_LINKER_FLAGS)" -o $(ATLAS_DESTINATION) $(ATLAS_SOURCE_FILES)
 
 .PHONY: build-debug
 build-debug: build-mongocli-debug build-atlascli-debug ## Generate binaries in ./bin for debugging both CLIs

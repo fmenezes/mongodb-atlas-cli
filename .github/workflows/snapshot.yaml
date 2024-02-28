@@ -23,4 +23,6 @@ jobs:
       - run: |
           ./build/package/generate-notices.sh
           export VERSION_GIT="$(git tag --list "atlascli/v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)"
-          goreleaser --config "build/package/.atlascli.goreleaser.yml" --rm-dist --release-notes "CHANGELOG_ATLASCLI.md" --snapshot -p 1
+          pushd atlascli
+          goreleaser --config "build/package/.goreleaser.yml" --rm-dist --release-notes "CHANGELOG_ATLASCLI.md" --snapshot -p 1
+          popd

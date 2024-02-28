@@ -1,7 +1,7 @@
 project_name: atlascli
 
-# monorepo:
-#   tag_prefix: atlascli_
+monorepo:
+  tag_prefix: atlascli/
 
 before:
   hooks:
@@ -14,7 +14,7 @@ builds:
       binary: bin/atlas
       main: ./cmd/atlas
       ldflags:
-        - -s -w -X github.com/fmenezes/mongodb-atlas-cli/internal/version.Version={{replace .Version "-atlascli" "" }} -X github.com/fmenezes/mongodb-atlas-cli/internal/version.GitCommit={{.FullCommit}} -X github.com/fmenezes/mongodb-atlas-cli/internal/config.ToolName=atlascli
+        - -s -w -X github.com/fmenezes/mongodb-atlas-cli/internal/version.Version={{ .Version }} -X github.com/fmenezes/mongodb-atlas-cli/internal/version.GitCommit={{.FullCommit}} -X github.com/fmenezes/mongodb-atlas-cli/internal/config.ToolName=atlascli
     id: linux
     goos: [linux]
     goarch: [amd64,arm64]
@@ -53,11 +53,10 @@ archives:
   <<: &archive_defaults
     files:
       - README.md
-      - atlascli.md
       - LICENSE
       - LICENSING-NOTES.txt
       - third_party_notices/**/*
-    name_template: mongodb-atlas-cli_{{replace .Version "-atlascli" "" }}_{{- if eq .Os "darwin" }}macos{{- else }}{{ .Os }}{{ end }}_{{- if eq .Arch "amd64" }}x86_64{{- else }}{{ .Arch }}{{ end }}
+    name_template: mongodb-atlas-cli_{{ .Version }}_{{- if eq .Os "darwin" }}macos{{- else }}{{ .Os }}{{ end }}_{{- if eq .Arch "amd64" }}x86_64{{- else }}{{ .Arch }}{{ end }}
     rlcp: false
   builds: [linux]
   wrap_in_directory: true
@@ -75,7 +74,7 @@ archives:
 nfpms:
 - id: linux_package
   package_name: mongodb-atlas-cli
-  file_name_template: mongodb-atlas-cli_{{replace .Version "-atlascli" "" }}_{{ .Os }}_{{- if eq .Arch "amd64" }}x86_64{{- else }}{{ .Arch }}{{ end }}
+  file_name_template: mongodb-atlas-cli_{{ .Version }}_{{ .Os }}_{{- if eq .Arch "amd64" }}x86_64{{- else }}{{ .Arch }}{{ end }}
   vendor: MongoDB Inc.
   homepage: https://www.mongodb.com/
   maintainer: MongoDB Inc. <support@mongodb.com>
@@ -85,11 +84,11 @@ nfpms:
   builds: [linux]
   formats: [deb,rpm]
   contents:
-    - src: ./build/package/rpm/installer
+    - src: ../build/package/rpm/installer
       dst: /etc/atlascli/installer
       type: "config|noreplace"
       packager: rpm
-    - src: ./build/package/deb/installer
+    - src: ../build/package/deb/installer
       dst: /etc/atlascli/installer
       type: "config|noreplace"
       packager: deb
@@ -133,7 +132,7 @@ changelog:
 #     artifacts: all
 #     output: true
 release:
-  prerelease: false
-  name_template: MongoDB Atlas CLI {{replace .Version "-atlascli" "" }}
+  prerelease: auto
+  name_template: MongoDB Atlas CLI {{ .Version }}
   extra_files:
     - glob: ./bin/*.msi

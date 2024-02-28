@@ -2,8 +2,8 @@
 name: Release AtlasCLI
 on:
   push:
-    tags: ['*']
-      # - atlascli_*
+    tags:
+      - atlascli/*
   pull_request:
 permissions:
   contents: write
@@ -21,13 +21,15 @@ jobs:
       - name: Install Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: 'go.mod'
+          go-version-file: 'atlascli/go.mod'
       - name: Install goreleaser
         run: |
           echo 'deb [trusted=yes] https://repo.goreleaser.com/apt/ /' | sudo tee /etc/apt/sources.list.d/goreleaser.list
           sudo apt update
           sudo apt install goreleaser-pro
       - run: |
+          pushd atlascli
           ./build/package/generate-notices.sh
-          export VERSION_GIT="$(git tag --list "v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)"
-          goreleaser --config "build/package/.atlascli.goreleaser.yml" --rm-dist --release-notes "CHANGELOG_ATLASCLI.md" -p 1 --debug
+          export VERSION_GIT="$(git tag --list "atlascli/v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)"
+          goreleaser --config "build/package/.goreleaser.yml" --rm-dist --release-notes "CHANGELOG.md" -p 1 --debug
+          popd

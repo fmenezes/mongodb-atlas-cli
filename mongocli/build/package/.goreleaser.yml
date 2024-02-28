@@ -15,6 +15,7 @@ builds:
       main: ./cmd/mongocli
       ldflags:
         - -s -w -X github.com/fmenezes/mongodb-atlas-cli/internal/version.Version={{.Version}} -X github.com/fmenezes/mongodb-atlas-cli/internal/version.GitCommit={{.FullCommit}}
+      dir: ./mongocli
     id: linux
     goos: [linux]
     goarch: [amd64,arm64]
@@ -24,26 +25,26 @@ builds:
     goarch: [amd64,arm64]
     hooks:
       # This will notarize Apple binaries and replace goreleaser bins with the notarized ones
-      post:
-        - cmd: ./build/package/mongocli_mac_notarize.sh
-          output: true
+      # post:
+      #   - cmd: ./build/package/mongocli_mac_notarize.sh
+      #     output: true
   - <<: *build_defaults
     id: windows
     goos: [windows]
     goarch: [amd64]
     hooks:
-      post:
-        - cmd: ./build/package/windows_notarize.sh
-          env:
-            - TOOL_NAME=mongocli
-            - VERSION={{ .Version }}
-          output: true
+      # post:
+      #   - cmd: ./build/package/windows_notarize.sh
+      #     env:
+      #       - TOOL_NAME=mongocli
+      #       - VERSION={{ .Version }}
+      #     output: true
 gomod: # https://goreleaser.com/customization/verifiable_builds/
   # Proxy a module from proxy.golang.org, making the builds verifiable.
   # This will only be effective if running against a tag. Snapshots will ignore
   # this setting.
   # Notice: for this to work your `build.main` must be a package, not a `.go` file.
-  proxy: false # it will be enabled in CLOUDP-228737
+  proxy: true # it will be enabled in CLOUDP-228737
   # Sets the `-mod` flag value.
   #
   # Since: v1.7
@@ -55,7 +56,6 @@ archives:
   <<: &archive_defaults
     files:
       - README.md
-      - mongocli.md
       - LICENSE
       - third_party_notices/**/*
   wrap_in_directory: true
@@ -111,6 +111,6 @@ signs:
     output: true
 release:
   prerelease: auto
-  name_template: "MongoDB CLI {{.Version}}"
+  name_template: MongoDB CLI {{.Version}}
   extra_files:
     - glob: ./bin/*.msi
