@@ -138,6 +138,6 @@ changelog:
 #     output: true
 release:
   prerelease: false
-  name_template: "MongoDB Atlas CLI {{.Version}}"
+  name_template: "MongoDB Atlas CLI {{ .Env.VERSION_GIT }}"
   extra_files:
     - glob: ./bin/*.msi
