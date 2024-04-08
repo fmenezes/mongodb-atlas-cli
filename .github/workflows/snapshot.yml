@@ -32,16 +32,7 @@ jobs:
           }
           '@
 
-          $profileFile = "$profile"
-          $chocoProfileSearch = '$ChocolateyProfile'
-          if(Test-Path $profileFile) {
-            if(Select-String -Path $profileFile -Pattern $chocoProfileSearch -Quiet -SimpleMatch) {
-                Write-Debug "Chocolatey profile is already installed."
-                return
-            }
-          }
-
-          $profileInstall | Out-File $profileFile -Append
+          $profileInstall | Out-File "$profile"
       - run: |
           choco install -y "go-msi" --force
           refreshenv
