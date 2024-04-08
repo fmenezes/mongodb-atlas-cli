@@ -20,6 +20,7 @@ jobs:
         with:
           go-version-file: 'go.mod'
       - run: choco install -y "go-msi" --force
+      - run: refreshenv
       - shell: bash
         run: |
           VERSION_GIT="$(git tag --list "atlascli/v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)"
