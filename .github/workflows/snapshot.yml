@@ -26,27 +26,28 @@ jobs:
       - run: |
           go install github.com/mat007/go-msi@latest
       - name: set envs
+        id: env
         shell: bash
         run: |
           {
             VERSION_GIT="$(git tag --list "atlascli/v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)";
-            VERSION_NAME="$VERSION_GIT-next";
             COMMIT="$(git log -n1 --format=format:'%H')";
             echo "VERSION_GIT=$VERSION_GIT";
-            echo "VERSION_NAME=$VERSION_NAME";
             echo "COMMIT=$COMMIT";
-            echo "SOURCE_FILES=./cmd/atlas";
-            echo "PACKAGE_NAME=mongodb-atlas-cli_${VERSION_NAME}_windows_x86_64.msi";
-            echo "OUTPUT=./bin/atlas.exe";
-            echo "LINKER_FLAGS=-s -w -X github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/version.Version=${VERSION_GIT} -X github.com/mongodb/mongodb-atlas-cli/atlascli/internal/version.GitCommit=${COMMIT}";
-            echo "WIX_MANIFEST_FILE=./build/package/wix/atlascli.json";
-            echo "GOOS=windows";
-            echo "GOARCH=amd64"
-          } >> "$GITHUB_ENV"
+          } >> "$GITHUB_OUTPUT"
       - shell: bash
         run: go build -ldflags "${LINKER_FLAGS}" -o "${OUTPUT}" "${SOURCE_FILES}"
+        env:
+          SOURCE_FILES: ./cmd/atlas
+          OUTPUT: ./bin/atlas.exe
+          LINKER_FLAGS: -s -w -X github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/version.Version=${{ steps.env.outputs.VERSION_GIT }} -X github.com/mongodb/mongodb-atlas-cli/atlascli/internal/version.GitCommit=${{ steps.env.outputs.COMMIT }}
+          GOOS: windows
+          GOARCH: amd64
       - shell: bash
         run: go-msi make --path "${WIX_MANIFEST_FILE}" --msi "bin/${PACKAGE_NAME}" --version "${VERSION_GIT}"
+        env:
+          PACKAGE_NAME: mongodb-atlas-cli_${{ steps.env.outputs.VERSION_GIT }}-next_windows_x86_64.msi
+          WIX_MANIFEST_FILE: ./build/package/wix/atlascli.json
       - uses: actions/upload-artifact@v4
         with:
           name: win-atlascli
