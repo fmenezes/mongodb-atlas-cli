@@ -29,7 +29,7 @@ builds:
         - cmd: ./build/package/mac_notarize.sh
           output: true
   - <<: *build_defaults
-    builder: prebuilt
+    # builder: prebuilt
     id: windows
     goos: [windows]
     goarch: [amd64]
