@@ -43,7 +43,7 @@ jobs:
             }
           }
 
-          $profileInstall | Out-File $profileFile -Append -Encoding (Get-FileEncoding $profileFile)
+          $profileInstall | Out-File $profileFile -Append -Encoding $encoding
       - run: |
           choco install -y "go-msi" --force
           refreshenv
