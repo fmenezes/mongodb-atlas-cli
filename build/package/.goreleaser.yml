@@ -34,8 +34,8 @@ builds:
     goos: [windows]
     goarch: [amd64]
     goamd64: [v1]
-    prebuilt:
-      path: ./bin/atlas.exe
+    # prebuilt:
+    #   path: ./bin/atlas.exe
     hooks:
       post:
         - cmd: ./build/package/windows_notarize.sh
