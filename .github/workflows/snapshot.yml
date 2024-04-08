@@ -19,26 +19,12 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'go.mod'
-      - run: |
-          $profileInstall = @'
-          # Chocolatey profile
-          $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-          if (Test-Path($ChocolateyProfile)) {
-              Import-Module "$ChocolateyProfile"
-          }
-          '@
-
-          $profileDir = [System.IO.Path]::GetDirectoryName("$profile")
-          New-Item -Path $profileDir -Type Directory
-
-          $profileInstall | Out-File "$profile"
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
       - name: Install WiX
         run: dotnet tool install --global wix
       - run: |
-          choco install -y "go-msi" --force
-          refreshenv
+          go install github.com/mat007/go-msi@latest
       - name: set envs
         shell: bash
         run: |
