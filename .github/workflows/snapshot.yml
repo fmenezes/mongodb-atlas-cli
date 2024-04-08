@@ -34,16 +34,14 @@ jobs:
 
           $profileFile = "$profile"
           $chocoProfileSearch = '$ChocolateyProfile'
-          $encoding = 'Default'
           if(Test-Path $profileFile) {
-            $encoding = (Get-FileEncoding $profileFile)
             if(Select-String -Path $profileFile -Pattern $chocoProfileSearch -Quiet -SimpleMatch) {
                 Write-Debug "Chocolatey profile is already installed."
                 return
             }
           }
 
-          $profileInstall | Out-File $profileFile -Append -Encoding $encoding
+          $profileInstall | Out-File $profileFile -Append
       - run: |
           choco install -y "go-msi" --force
           refreshenv
