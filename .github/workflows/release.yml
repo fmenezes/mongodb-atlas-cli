@@ -20,12 +20,15 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'go.mod'
+      - run: echo "dummy" > bin/dummy.msi
       - run: |
           echo 'deb [trusted=yes] https://repo.goreleaser.com/apt/ /' | sudo tee /etc/apt/sources.list.d/goreleaser.list
           sudo apt update
           sudo apt install goreleaser-pro
       - run: ./build/package/generate-notices.sh
+      - id: version
+        run: echo "VERSION_GIT=$(git tag --list "atlascli/v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)" >> "$GITHUB_OUTPUT"
       - run: |
-          VERSION_GIT="$(git tag --list "atlascli/v*" --sort=taggerdate | tail -1 | cut -d "v" -f 2)"
-          export VERSION_GIT
           goreleaser --config "build/package/.goreleaser.yml" --rm-dist --release-notes "CHANGELOG.md" -p 1 --debug
+        env:
+          VERSION_GIT: ${{ steps.version.outputs.VERSION_GIT }}
