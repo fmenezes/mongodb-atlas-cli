@@ -19,10 +19,6 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'go.mod'
-      - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v1.1
-      - name: Install WiX
-        run: dotnet tool install --global wix
       - run: |
           $profileInstall = @'
           # Chocolatey profile
@@ -36,6 +32,10 @@ jobs:
           New-Item -Path $profileDir -Type Directory
 
           $profileInstall | Out-File "$profile"
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+      - name: Install WiX
+        run: dotnet tool install --global wix
       - run: |
           choco install -y "go-msi" --force
           refreshenv
