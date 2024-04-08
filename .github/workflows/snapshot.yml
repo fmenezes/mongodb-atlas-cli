@@ -32,6 +32,9 @@ jobs:
           }
           '@
 
+          $profileDir = [System.IO.Path]::GetDirectoryName("$profile")
+          New-Item -Path $profileDir -Type Directory
+
           $profileInstall | Out-File "$profile"
       - run: |
           choco install -y "go-msi" --force
