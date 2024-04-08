@@ -48,6 +48,7 @@ jobs:
         env:
           PACKAGE_NAME: mongodb-atlas-cli_${{ steps.env.outputs.VERSION_GIT }}-next_windows_x86_64.msi
           WIX_MANIFEST_FILE: ./build/package/wix/atlascli.json
+          VERSION_GIT: ${{ steps.env.outputs.VERSION_GIT }}
       - uses: actions/upload-artifact@v4
         with:
           name: win-atlascli
