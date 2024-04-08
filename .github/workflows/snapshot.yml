@@ -22,11 +22,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'go.mod'
-      - uses: actions/download-artifact@v4
-        with:
-          name: win-atlascli
-          path: .
-      - run: ls -la
+      - run: echo "dummy" > bin/dummy.msi
       - run: |
           echo 'deb [trusted=yes] https://repo.goreleaser.com/apt/ /' | sudo tee /etc/apt/sources.list.d/goreleaser.list
           sudo apt update
