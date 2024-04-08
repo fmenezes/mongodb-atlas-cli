@@ -34,7 +34,7 @@ jobs:
 
           $profileFile = "$profile"
           $chocoProfileSearch = '$ChocolateyProfile'
-          if(Select-String -Path $profileFile -Pattern $chocoProfileSearch -Quiet -SimpleMatch) {
+          if((Test-Path $profileFile) -and (Select-String -Path $profileFile -Pattern $chocoProfileSearch -Quiet -SimpleMatch)) {
               Write-Debug "Chocolatey profile is already installed."
               return
           }
