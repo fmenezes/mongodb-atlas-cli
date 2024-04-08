@@ -45,7 +45,8 @@ jobs:
           } >> "$GITHUB_ENV"
       - shell: bash
         run: go build -ldflags "${LINKER_FLAGS}" -o "${OUTPUT}" "${SOURCE_FILES}"
-      - run: go-msi make --path "${WIX_MANIFEST_FILE}" --msi "bin/${PACKAGE_NAME}" --version "${VERSION_GIT}"
+      - shell: bash
+        run: go-msi make --path "${WIX_MANIFEST_FILE}" --msi "bin/${PACKAGE_NAME}" --version "${VERSION_GIT}"
       - uses: actions/upload-artifact@v4
         with:
           name: win-atlascli
