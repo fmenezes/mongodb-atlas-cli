@@ -19,6 +19,30 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: 'go.mod'
+      - name: Add msbuild to PATH
+        uses: microsoft/setup-msbuild@v1.1
+      - name: Install WiX
+        run: dotnet tool install --global wix
+      - run: |
+          $profileInstall = @'
+          # Chocolatey profile
+          $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+          if (Test-Path($ChocolateyProfile)) {
+              Import-Module "$ChocolateyProfile"
+          }
+          '@
+
+          $profileFile = "$profile"
+          $chocoProfileSearch = '$ChocolateyProfile'
+          if(Select-String -Path $profileFile -Pattern $chocoProfileSearch -Quiet -SimpleMatch) {
+              Write-Debug "Chocolatey profile is already installed."
+              return
+          }
+
+          $profileInstall | Out-File $profileFile -Append -Encoding (Get-FileEncoding $profileFile)
+      - run: |
+          choco install -y "go-msi" --force
+          refreshenv
       - name: set envs
         shell: bash
         run: |
@@ -38,21 +62,8 @@ jobs:
             echo "GOARCH=amd64"
           } >> "$GITHUB_ENV"
       - shell: bash
-        run: |
-          ls -la
-          go build -ldflags "${LINKER_FLAGS}" -o "${OUTPUT}" "${SOURCE_FILES}"
-      - run: |
-          choco install -y "go-msi" --force
-          $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
-          if (Test-Path($ChocolateyProfile)) {
-            Import-Module "$ChocolateyProfile"
-          }
-          refreshenv
-          go-msi make --path "${WIX_MANIFEST_FILE}" --msi "bin/${PACKAGE_NAME}" --version "${VERSION_GIT}"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: atlas.exe
-          path: ./bin/atlas.exe
+        run: go build -ldflags "${LINKER_FLAGS}" -o "${OUTPUT}" "${SOURCE_FILES}"
+      - run: go-msi make --path "${WIX_MANIFEST_FILE}" --msi "bin/${PACKAGE_NAME}" --version "${VERSION_GIT}"
       - uses: actions/upload-artifact@v4
         with:
           name: win-atlascli
