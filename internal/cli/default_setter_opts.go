@@ -29,7 +29,7 @@ import (
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/store"
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/telemetry"
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/validate"
-	atlasv2 "go.mongodb.org/atlas-sdk/v20231115008/admin"
+	atlasv2 "go.mongodb.org/atlas-sdk/v20231115014/admin"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 )
 

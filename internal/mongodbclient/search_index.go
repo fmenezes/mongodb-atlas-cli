@@ -23,7 +23,7 @@ import (
 
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/log"
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/pointer"
-	"go.mongodb.org/atlas-sdk/v20231115008/admin"
+	"go.mongodb.org/atlas-sdk/v20231115014/admin"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

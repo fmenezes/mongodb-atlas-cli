@@ -22,7 +22,7 @@ import (
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/mocks"
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/pointer"
 	"github.com/golang/mock/gomock"
-	"go.mongodb.org/atlas-sdk/v20231115008/admin"
+	"go.mongodb.org/atlas-sdk/v20231115014/admin"
 )
 
 func TestDescribe_Run(t *testing.T) {

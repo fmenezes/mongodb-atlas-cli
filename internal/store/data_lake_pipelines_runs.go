@@ -17,7 +17,7 @@
 package store
 
 import (
-	atlasv2 "go.mongodb.org/atlas-sdk/v20231115008/admin"
+	atlasv2 "go.mongodb.org/atlas-sdk/v20231115014/admin"
 )
 
 //go:generate mockgen -destination=../mocks/mock_data_lake_pipelines_runs.go -package=mocks github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/store PipelineRunsLister,PipelineRunsDescriber
