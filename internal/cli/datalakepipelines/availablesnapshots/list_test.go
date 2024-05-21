@@ -29,7 +29,7 @@ import (
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/test"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	atlasv2 "go.mongodb.org/atlas-sdk/v20231115008/admin"
+	atlasv2 "go.mongodb.org/atlas-sdk/v20231115014/admin"
 )
 
 func TestListOpts_Run(t *testing.T) {

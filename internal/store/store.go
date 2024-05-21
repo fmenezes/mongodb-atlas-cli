@@ -28,7 +28,7 @@ import (
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/config"
 	"github.com/fmenezes/mongodb-atlas-cli/atlascli/internal/log"
 	"github.com/mongodb-forks/digest"
-	atlasv2 "go.mongodb.org/atlas-sdk/v20231115008/admin"
+	atlasv2 "go.mongodb.org/atlas-sdk/v20231115014/admin"
 	atlasauth "go.mongodb.org/atlas/auth"
 	atlas "go.mongodb.org/atlas/mongodbatlas"
 )
